@@ -1210,17 +1210,17 @@
 									</div>
 									<!--end:Menu item-->
 									<!--begin:Menu item-->
-									<div class="menu-item">
-										<!--begin:Menu link-->
-										<a class="menu-link" href="pages/analystic_and_report.html" data-kt-page="pro">
-											<span class="menu-icon">
+									<!-- <div class="menu-item">
+										
+										<a class="menu-link" href="pages/analystic_and_report.html" data-kt-page="pro"> -->
+											<!-- <span class="menu-icon">
 												<span><i class="fa-solid fa-magnifying-glass"></i></span>
 											</span>
-											<span class="menu-title">Analystic & Reports
+											<span class="menu-title">Analystic & Reports -->
 												<!-- <span class="badge badge-pro badge-light-danger fw-semibold fs-8 px-2 py-1 ms-1" data-bs-toggle="tooltip" title="Upgrade to Pro to get this">Pro</span>--></span>
-										</a>
+										<!-- </a> -->
 										<!--end:Menu link-->
-									</div>
+									<!-- </div> -->
 									<!--end:Menu item-->
 									<!--begin:Menu item-->
 									<div class="menu-item">
@@ -1425,386 +1425,149 @@
 								<div class="card card-flush">
 									<!--begin::Card header-->
 
+<!--begin::Content-->
+<div class="row">
+    <div class="col-md-6">
+        <div id="kt_account_settings_profile_details" class="collapse show">
+            <!--begin::Form-->
+            <form id="invoice_from_form" class="form">
+                <div class="card-body border-top p-9" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 13px; padding: 10px;">
+                    <div class="row mb-6">
+                        <h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">
+                            Who is this Invoice From
+                        </h1>
+                    </div>
 
-									<!--begin::Content-->
-									<div class="row">
-										<div class="col-md-6">
-											<div id="kt_account_settings_profile_details" class="collapse show">
-												<!--begin::Form-->
-												<form id="kt_account_profile_details_form" class="form">
-													<!--begin::Card body-->
-													<div class="card-body border-top p-9"
-														style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  border-radius: 13px; padding: 10px;">
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<h1
-																class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">
-																Who is this Invoice From</h1>
-															<!--end::Label-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="fname" class="form-control form-control-lg form-control-solid" placeholder="Full name" value="" />
+                        </div>
+                    </div>
 
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+                        </div>
+                    </div>
 
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label
-																class="col-lg-4 col-form-label required fw-semibold fs-6">Full
-																Name</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8">
-																<!--begin::Row-->
-																<div class="row">
-																	<!--begin::Col-->
-																	<div class="col-lg-12 fv-row">
-																		<input type="text" name="fname"
-																			class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-																			placeholder="Full name" value="" />
-																	</div>
-																	<!--end::Col-->
-																</div>
-																<!--end::Row-->
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label
-																class="col-lg-4 col-form-label required fw-semibold fs-6">Business
-																Name
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="text" name="company"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="Company name" value="" />
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label class="col-lg-4 col-form-label fw-semibold fs-6">
-																<span class="required">Contact Phone</span>
-																<span class="ms-1" data-bs-toggle="tooltip"
-																	title="Phone number must be active">
-																	<i
-																		class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																		<span class="path1"></span>
-																		<span class="path2"></span>
-																		<span class="path3"></span>
-																	</i>
-																</span>
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="tel" name="phone"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="044 3276 454 935" value="" />
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">Contact Phone</label>
+                        <div class="col-lg-8">
+                            <input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+                        </div>
+                    </div>
 
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label
-																class="col-lg-4 col-form-label required fw-semibold fs-6">Address
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="text" name="company"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="123 street, place name, City, State, Country"
-																	value="" />
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Address</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="address" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+                        </div>
+                    </div>
 
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label
-																class="col-lg-4 col-form-label required fw-semibold fs-6">Email
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="text" name="company"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="example@example.com" value="" />
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Email</label>
+                        <div class="col-lg-8">
+                            <input type="email" name="email" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
+                        </div>
+                    </div>
 
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">GST Number</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="gst" class="form-control form-control-lg form-control-solid" placeholder="Enter GST Number" value="" />
+                        </div>
+                    </div>
+					<div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">Other Details</label>
+                        <div class="col-lg-8">
+                            <textarea name="other_details" class="form-control form-control-lg form-control-solid" placeholder="Additional information"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
+    <div class="col-md-6">
+        <div id="kt_account_settings_profile_details" class="collapse show">
+            <!--begin::Form-->
+            <form id="invoice_to_form" class="form">
+                <div class="card-body border-top p-9" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; border-radius: 13px; padding: 10px;">
+                    <div class="row mb-6">
+                        <h1 class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">
+                            Who is this Invoice To
+                        </h1>
+                    </div>
 
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Full Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="fname" class="form-control form-control-lg form-control-solid" placeholder="Full name" value="" />
+                        </div>
+                    </div>
 
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label class="col-lg-4 col-form-label fw-semibold fs-6">
-																<span class="required">GST Number</span>
-																<span class="ms-1" data-bs-toggle="tooltip"
-																	title="GST number must be valid and approved by the government">
-																	<i
-																		class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																		<span class="path1"></span>
-																		<span class="path2"></span>
-																		<span class="path3"></span>
-																	</i>
-																</span>
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="tel" name="phone"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="3276 454 935" value="" />
-																<span><a href="" style="color: #000;">Select a existing
-																		customer</a></span>
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Business Name</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="company" class="form-control form-control-lg form-control-solid" placeholder="Company name" value="" />
+                        </div>
+                    </div>
 
-														<!--begin::Input group-->
-														<div class="row mb-6">
-															<!--begin::Label-->
-															<label
-																class="col-lg-4 col-form-label required fw-semibold fs-6">Other
-																Details
-															</label>
-															<!--end::Label-->
-															<!--begin::Col-->
-															<div class="col-lg-8 fv-row">
-																<input type="text" name="company"
-																	class="form-control form-control-lg form-control-solid"
-																	placeholder="Item specifications" value="" />
-															</div>
-															<!--end::Col-->
-														</div>
-														<!--end::Input group-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">Contact Phone</label>
+                        <div class="col-lg-8">
+                            <input type="tel" name="phone" class="form-control form-control-lg form-control-solid" placeholder="044 3276 454 935" value="" />
+                        </div>
+                    </div>
 
-														<!--end::Nav-->
-												</form>
-												<!--begin::Save Button-->
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Address</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="address" class="form-control form-control-lg form-control-solid" placeholder="123 street, place name, City, State, Country" value="" />
+                        </div>
+                    </div>
 
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label required fw-semibold fs-6">Email</label>
+                        <div class="col-lg-8">
+                            <input type="email" name="email" class="form-control form-control-lg form-control-solid" placeholder="example@example.com" value="" />
+                        </div>
+                    </div>
 
+                    <div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">GST Number</label>
+                        <div class="col-lg-8">
+                            <input type="text" name="gst" class="form-control form-control-lg form-control-solid" placeholder="Enter GST Number" value="" />
+                        </div>
+                    </div>
+					<div class="row mb-6">
+                        <label class="col-lg-4 col-form-label fw-semibold fs-6">Other Details</label>
+                        <div class="col-lg-8">
+                            <textarea name="other_details" class="form-control form-control-lg form-control-solid" placeholder="Additional information"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-											</div>
-											<!--end::Content container-->
-											<div class="row mb-6 pt-4">
-												<div class="col-lg-8 offset-lg-4">
-													<button type="submit" class="btn  btn-success">
-														Save
-													</button>
-												</div>
-											</div>
+    <!-- Common Save Button -->
+    <div class="row mb-6 pt-4">
+		<div class="col-12 d-flex justify-content-center">
+			<button type="submit" class="btn btn-success" onclick="submitForms()">Save</button>
+		</div>
+	</div>
+	
+</div>
 
-
-										</div>
-
-									</div>
-									<!--end::Content-->
-									<!--begin::Content-->
-									<div class="col-md-6">
-										<div id="kt_account_settings_profile_details" class="collapse show">
-											<!--begin::Form-->
-											<form id="kt_account_profile_details_form" class="form">
-												<!--begin::Card body-->
-												<div class="card-body border-top p-9"
-													style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;  border-radius: 13px; padding: 10px;">
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<h1
-															class="page-heading d-flex flex-column justify-content-center text-dark fw-bolder fs-1 lh-0">
-															Who is this Invoice To</h1>
-														<!--end::Label-->
-
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label
-															class="col-lg-4 col-form-label required fw-semibold fs-6">Full
-															Name</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8">
-															<!--begin::Row-->
-															<div class="row">
-																<!--begin::Col-->
-																<div class="col-lg-12 fv-row">
-																	<input type="text" name="fname"
-																		class="form-control form-control-lg form-control-solid mb-3 mb-lg-0"
-																		placeholder="Full name" value="" />
-																</div>
-																<!--end::Col-->
-															</div>
-															<!--end::Row-->
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label
-															class="col-lg-4 col-form-label required fw-semibold fs-6">Business
-															Name
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="Company name" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label fw-semibold fs-6">
-															<span class="required">Contact Phone</span>
-															<span class="ms-1" data-bs-toggle="tooltip"
-																title="Phone number must be active">
-																<i
-																	class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																	<span class="path1"></span>
-																	<span class="path2"></span>
-																	<span class="path3"></span>
-																</i>
-															</span>
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="tel" name="phone"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="044 3276 454 935" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label
-															class="col-lg-4 col-form-label required fw-semibold fs-6">Address
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="123 street, place name, City, State, Country"
-																value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label
-															class="col-lg-4 col-form-label required fw-semibold fs-6">Email
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="example@example.com" value="" />
-
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label class="col-lg-4 col-form-label fw-semibold fs-6">
-															<span class="required">GST Number</span>
-															<span class="ms-1" data-bs-toggle="tooltip"
-																title="GST number must be valid and approved by the government">
-																<i
-																	class="ki-duotone ki-information-5 text-gray-500 fs-6">
-																	<span class="path1"></span>
-																	<span class="path2"></span>
-																	<span class="path3"></span>
-																</i>
-															</span>
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="tel" name="phone"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="3276 454 935" value="" />
-															<span><a href="" style="color: #000;">Select a existing
-																	customer</a></span>
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-													<!--begin::Input group-->
-													<div class="row mb-6">
-														<!--begin::Label-->
-														<label
-															class="col-lg-4 col-form-label required fw-semibold fs-6">Other
-															Details
-														</label>
-														<!--end::Label-->
-														<!--begin::Col-->
-														<div class="col-lg-8 fv-row">
-															<input type="text" name="company"
-																class="form-control form-control-lg form-control-solid"
-																placeholder="Item specifications" value="" />
-														</div>
-														<!--end::Col-->
-													</div>
-													<!--end::Input group-->
-
-
-
-
-
-
-
-												</div>
-												<div class="row mb-6 pt-4">
-													<div class="col-lg-8 offset-lg-4">
-														<button type="submit" class="btn  btn-success">
-															Save
-														</button>
-													</div>
-												</div>
-
-										</div>
-									</div>
+<script>
+function submitForms() {
+    document.getElementById('invoice_from_form').submit();
+    document.getElementById('invoice_to_form').submit();
+}
+</script>
 
 									<div id="kt_app_content" class="app-content flex-column-fluid">
 										<!--begin::Content container-->
