@@ -224,39 +224,56 @@
             text-decoration: underline;
         }
 
-    @media screen and (max-width: 768px) {
-        .header {
-            flex-direction: column;
-            text-align: center;
+        @media screen and (max-width: 768px) {
+            .invoice-container {
+                width: 95%; /* Adjust to screen size */
+                max-width: 100%; /* Prevent overflow */
+                padding: 10px; /* Reduce padding */
+                margin: 20px auto; /* Center it */
+                overflow: hidden; /* Prevent content from going outside */
+            }
+        
+            .header, .footer {
+                flex-direction: column; /* Stack elements */
+                text-align: center;
+            }
+        
+            .company-info h2 {
+                font-size: 22px; /* Adjust for smaller screens */
+                word-wrap: break-word; /* Prevent long names from overflowing */
+            }
+        
+            .table-container {
+                width: 100%; /* Ensure it fits */
+                overflow-x: auto; /* Enable scrolling if needed */
+            }
+        
+            .table, .table1 {
+                width: 100%; /* Make tables fit */
+                table-layout: auto; /* Allow flexible column sizing */
+            }
+        
+            .table th, .table td, 
+            .table1 th, .table1 td {
+                word-break: break-word; /* Prevent text from overflowing */
+                font-size: 14px;
+            }
+        
+            .pricing-table {
+                width: 100%;
+            }
+        
+            .footer {
+                flex-direction: column;
+                text-align: center;
+            }
+        
+            .contact-info, .company-info {
+                max-width: 100%;
+                text-align: center;
+            }
         }
-
-        .date-box {
-            text-align: center;
-            width: 100%;
-        }
-
-        .table-container {
-            overflow-x: auto;
-        }
-
-        .table, .table1, .pricing-table {
-            display: block;
-            overflow-x: auto;
-            white-space: nowrap;
-        }
-
-        .footer {
-            flex-direction: column;
-        }
-
-        .contact-info, .company-info {
-            text-align: center;
-        }
-
-        .company-info h2 {
-            font-size: 28px;
-        }
-    }
+        
         
     </style>
 </head>
@@ -366,7 +383,21 @@
             </div>
         </div>
     </div>
-
+    <div class="buttons-container" style="text-align: center; margin-top: 20px; padding-bottom:20px;">
+        <button onclick="window.print()" style="background-color: #0097b2; color: white; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold; margin-right: 10px;">
+            Print Invoice
+        </button>
+        <button onclick="downloadInvoice()" style="background-color: #326996; color: white; padding: 10px 20px; border: none; cursor: pointer; font-weight: bold;">
+            Download Invoice
+        </button>
+    </div>
+    
+    <script>
+        function downloadInvoice() {
+            window.print(); // Users can save as PDF from print dialog
+        }
+    </script>
+    
     <!-- Invoice 1 end -->
 
     <script src="assets/js/jquery.min.js"></script>
